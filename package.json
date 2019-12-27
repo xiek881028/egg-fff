@@ -1,0 +1,79 @@
+{
+  "name": "egg",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "egg": "^2.15.1",
+    "egg-redis": "^2.4.0",
+    "egg-scripts": "^2.11.0",
+    "egg-session": "^3.1.0",
+    "egg-session-redis": "^2.1.0",
+    "egg-view-react-ssr": "^2.5.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-loadable": "^5.5.0",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.1.2",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-router-redux": "^4.0.8",
+    "redux": "^4.0.4",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@easy-team/easywebpack-cli": "^4.0.0",
+    "@easy-team/easywebpack-react": "^4.1.0",
+    "antd": "^3.25.2",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "babel-plugin-react-css-modules": "^5.2.6",
+    "cross-env": "^6.0.3",
+    "crypto-js": "^3.1.9-1",
+    "egg-bin": "^4.11.0",
+    "egg-webpack": "^4.5.2",
+    "egg-webpack-react": "^2.0.3",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "js-cookie": "^2.2.1",
+    "jsencrypt": "^3.0.0-rc.1",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "postcss-nested": "^4.2.1",
+    "postcss-scss": "^2.0.0",
+    "regenerator-runtime": "^0.13.3",
+    "sass-loader": "^8.0.0",
+    "sass-resources-loader": "^2.0.1",
+    "validator": "^12.0.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-linkfin --port=7001",
+    "stop": "egg-scripts stop --title=egg-linkfin",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "build": "easy build",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}

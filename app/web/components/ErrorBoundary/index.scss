@@ -1,0 +1,11 @@
+.error-wrap {
+  width: 100%;
+  display: flex;
+  .box{
+    margin: 24px 80px;
+    padding-bottom: 50px;
+    background: #fff;
+    box-shadow: 0 0 6px 0 rgba(119,151,178,0.10);
+    flex: 1 1 auto;
+  }
+}
